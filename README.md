@@ -28,7 +28,7 @@ This tool **include:**
 
 About: This tool allows you to track the coin price,
 alerts you when coin reaches the desired buy or sale price.
-                                        CODED BY TMRSWRR
+                                        *CODED BY TMRSWRR*
 Parameters:
 
 + --coin ==> Choose which coin you want to track
