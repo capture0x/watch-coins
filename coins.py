@@ -2,7 +2,6 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from playsound import playsound
-import tkinter as tk
 import sys
 
 
@@ -21,22 +20,17 @@ def islem(a):
                 if aa[0:5] == sys.argv[4]:
                     print('\33[34m', "Buy >>", aa[0:5])
                     playsound("a.mp3")
-                    sleep(20)
-                    browser.close()
-                    browser.quit()
                 elif aa[0:5] == sys.argv[6]:
                     print("\33[31m", "Sell >>", aa[0:5])
                     playsound("a.mp3")
-                    sleep(20)
-                    browser.close()
-                    browser.quit()
+                    
 
     except:
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
 
 
 secim = """ 
-                 >>>WELCOME TO COINS TOOL<<<
+            >>> WELCOME TO COINS TOOL <<<
 \nAbout: This tool allows you to track the coin price,
 alerts you when coin reaches the desired buy or sale price.
                                         CODED BY TMRSWRR
