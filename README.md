@@ -26,10 +26,10 @@ This tool **include:**
 + DOT 
 + DOGE 
 
-*About: This tool allows you to track the coin price,
-alerts you when coin reaches the desired buy or sale price.
+*About: This tool allows you to track the coin price,*
+*alerts you when coin reaches the desired buy or sale price.*
                                         
-*Parameters:
+*Parameters:*
 
 + --coin ==> Choose which coin you want to track
     Coin list:  BTC ETH DASH LTC XRP ADA EOS DOT DOGE 
