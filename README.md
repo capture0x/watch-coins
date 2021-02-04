@@ -34,9 +34,9 @@ This tool **include:**
 + --coin ==> Choose which coin you want to track
     Coin list:  BTC ETH DASH LTC XRP ADA EOS DOT DOGE 
 + --buy  ==> Set purchase price
-       ex:--buy 1,550
+       ex: --buy 1,550
 + --sell ==> Set sale price
-       ex:--sell 1,700
+       ex: --sell 1,700
 + --help
 + --exit ==> Press to "e" for exit
 
