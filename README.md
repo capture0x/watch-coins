@@ -10,7 +10,7 @@ Instagram: [Capture the Root](https://www.instagram.com/capturetheroot/)
 
 
 ## 📹 How to use 📹
-[![How to use WATCH COINS TOOLS ]
+[![How to use WATCH COINS TOOLS ](https://i.imgur.com/O3faDQq.png)](https://youtu.be/EV_fCFO79cY)
 Click on the image...
 
 
