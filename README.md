@@ -31,14 +31,14 @@ alerts you when coin reaches the desired buy or sale price.
                                         CODED BY TMRSWRR
 Parameters:
 
---coin ==> Choose which coin you want to track
++ --coin ==> Choose which coin you want to track
     Coin list:  BTC ETH DASH LTC XRP ADA EOS DOT DOGE 
---buy  ==> Set purchase price
++ --buy  ==> Set purchase price
        ex:--buy 1,550
---sell ==> Set sale price
++ --sell ==> Set sale price
        ex:--sell 1,700
---help
---exit ==> Press to "e" for exit
++ --help
++ --exit ==> Press to "e" for exit
 
 
 ## 📀 Installation 📀
