@@ -47,6 +47,8 @@ This tool **include:**
 ```bash
 git clone https://github.com/capture0x/watch-coins
 cd watch-coins
+chmod +x aa.sh
+./aa.sh
 pip3 install -r requirements.txt
 ```
 ## Usage
