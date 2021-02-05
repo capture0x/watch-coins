@@ -54,7 +54,7 @@ pip3 install -r requirements.txt
 ## Usage
 
 ```bash
-python3 coins.py --coin ETH --buy 1,660 --sell 1,700
+python3 coins.py --coin ETH --buy 1,600 --sell 1,700
 
 ```
 
