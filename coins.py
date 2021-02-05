@@ -101,4 +101,4 @@ try:
     elif sys.argv[2] in ['-h', '--help']:
         print('\33[34m'+secim[:45],'\33[31m'+secim[45:215],"\33[33m"+secim[215:458],"\33[36m"+secim[458:560])
 except:
-    pass
+    print("Wrong Value..!")
