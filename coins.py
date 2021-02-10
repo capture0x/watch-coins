@@ -38,7 +38,7 @@ def islem(a):
             aa = browser.title
             if len(aa) < 35:
                 print('\33[33m' + "Time :", "\33[37m" + time.strftime('%c'), "\33[35m" + "Price :", '\33[32m' + aa[0:7])
-                if aa[0:5] <= sys.argv[4]:
+                if aa[0:8] <= sys.argv[4]:
                     print('\33[32m' + "Buy :", '\33[31m' +"Price :"+aa[0:7])
                     playsound("a.mp3")
                     aaa = input("Press exit 'e' or contiue 'c' :")
@@ -49,7 +49,7 @@ def islem(a):
                         continue
                     else:
                         print("Wrong Value..!")
-                elif aa[0:5] >= sys.argv[6]:
+                elif aa[0:8] >= sys.argv[6]:
                     print("\33[32m" + "Sell :", '\33[31m' +"Price :"+ aa[0:7])
                     playsound("a.mp3")
                     aaa = input("Press exit 'e' or contiue 'c' :")
