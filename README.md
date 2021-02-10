@@ -64,6 +64,6 @@ python3 coins.py --coin ETH --buy 1,600 --sell 1,700
 
 For bug reports or enhancements, please open an [issue](https://github.com/capture0x/watch-coins/issues) here.
 
-DONATE ETHEREUM ==> 0x555A9F02FE9Db7cE08408568aEd931473A203505
+DONATE BTC ==> 38Gru3iAH4i4Jx5oTt24Ju1ShTfnxFM2nN
 
 **Copyright 2021**
