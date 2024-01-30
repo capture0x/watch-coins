@@ -1,14 +1,14 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from playsound import playsound
+from selenium.webdriver.chrome.service import Service
 import sys
-import os
+from time import sleep
 
 secim = """ 
             >>> WELCOME TO COINS TOOL <<<
 \nAbout: This tool allows you to track the coin price,
-alerts you when coin reaches the desired buy or sale price.
+alerts you when the coin reaches the desired buy or sale price.
                                         CODED BY TMRSWRR
 Parameters:
 
@@ -19,56 +19,32 @@ Parameters:
 --sell ==> Set sale price
        ex:1,580
 --help
---exit ==> Press to "e" for exit
+--exit ==> Press 'e' for exit
 
 example:\n\tpython3 coins.py --coin ETH --buy 1,660 --sell 1,700
-        python3 coins.py coin --help
- """
+        python3 coins.py --coin ETH --help
+"""
+
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
 
 def islem(a):
     try:
         print('\33[34m'+secim[:45],'\33[31m'+secim[45:215],"\33[33m"+secim[215:458],"\33[36m"+secim[458:560])
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
-        browser = webdriver.Chrome(executable_path="/usr/bin/chromedriver", options=chrome_options)
+
+        chrome_service = Service("/usr/bin/chromedriver")
+        browser = webdriver.Chrome(service=chrome_service, options=chrome_options)
+
         while True:
             browser.get(a)
+            sleep(5)
             aa = browser.title
-            if len(aa) < 35:
-                print('\33[33m' + "Time :", "\33[37m" + time.strftime('%c'), "\33[35m" + "Price :", '\33[32m' + aa[0:7])
-                if aa[0:8] <= sys.argv[4]:
-                    print('\33[32m' + "Buy :", '\33[31m' +"Price :"+aa[0:7])
-                    playsound("a.mp3")
-                    aaa = input("Press exit 'e' or contiue 'c' :")
-                    if aaa == "e":
-                        browser.quit()
-                        browser.close()
-                    elif aaa == "c":
-                        continue
-                    else:
-                        print("Wrong Value..!")
-                elif aa[0:8] >= sys.argv[6]:
-                    print("\33[32m" + "Sell :", '\33[31m' +"Price :"+ aa[0:7])
-                    playsound("a.mp3")
-                    aaa = input("Press exit 'e' or contiue 'c' :")
-                    if aaa == "e":
-                        browser.quit()
-                        browser.close()
-                    elif aaa == "c":
-                        continue
-                    else:
-                        print("Wrong Value..!")
+            print(aa)
 
-
-
-
-    except:
-        pass
-
-
-
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 try:
     if sys.argv[2] in ['BTC', ]:
@@ -100,5 +76,7 @@ try:
         islem(a)
     elif sys.argv[2] in ['-h', '--help']:
         print('\33[34m'+secim[:45],'\33[31m'+secim[45:215],"\33[33m"+secim[215:458],"\33[36m"+secim[458:560])
-except:
-    print("Wrong Value..!")
+except IndexError:
+    print("Please provide a valid command-line argument.")
+except Exception as e:
+    print(f"An error occurred: {e}")
