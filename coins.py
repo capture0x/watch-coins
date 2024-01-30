@@ -23,7 +23,7 @@ secim = """\033[1;33m
 \033[1;33mParameters:
 
 \033[1;32m--coin ==> \033[0mChoose which coin you want to track
-    Coin list:  \033[1;32mBTC ETH DASH LTC XRP ADA EOS DOT DOGE\033[0m
+   Coin list:\033[1;32mBTC ETH DASH LTC XRP ADA EOS DOT DOGE
 \033[1;32m--buy  ==> \033[0mSet purchase price
        ex: \033[1;32m1,550\033[0m
 \033[1;32m--sell ==> \033[0mSet sale price
