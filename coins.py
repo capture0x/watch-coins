@@ -5,23 +5,34 @@ from selenium.webdriver.chrome.service import Service
 import sys
 from time import sleep
 
-secim = """ 
-            >>> WELCOME TO COINS TOOL <<<
-\nAbout: This tool allows you to track the coin price,
-alerts you when the coin reaches the desired buy or sale price.
-                                        CODED BY TMRSWRR
-Parameters:
+secim = """\033[1;33m
+  ╭━━━━┳━━━┳━━━┳━━━┳━━━┳━━━╮
+  ┃╭╮╭╮┃╭━╮┃╭━╮┣╮╭╮┃╭━━┫╭━╮┃
+  ╰╯┃┃╰┫╰━╯┃┃╱┃┃┃┃┃┃╰━━┫╰━╯┃
+  ╱╱┃┃╱┃╭╮╭┫╰━╯┃┃┃┃┃╭━━┫╭╮╭╯
+  ╱╱┃┃╱┃┃┃╰┫╭━╮┣╯╰╯┃╰━━┫┃┃╰╮
+  ╱╱╰╯╱╰╯╰━┻╯╱╰┻━━━┻━━━┻╯╰━╯
+         \033[1;32mCODED BY TMRSWRR
+                   This tool allows 
+          you to track the 
+                   coin price,alerts 
+          you when the coin 
+                   reaches the desired 
+          buy or sale price.
+        
+\033[1;33mParameters:
 
---coin ==> Choose which coin you want to track
-    Coin list:  BTC ETH DASH LTC XRP ADA EOS DOT DOGE 
---buy  ==> Set purchase price
-       ex:1,550
---sell ==> Set sale price
-       ex:1,580
---help
---exit ==> Press 'e' for exit
+\033[1;32m--coin ==> \033[0mChoose which coin you want to track
+    Coin list:  \033[1;32mBTC ETH DASH LTC XRP ADA EOS DOT DOGE\033[0m
+\033[1;32m--buy  ==> \033[0mSet purchase price
+       ex: \033[1;32m1,550\033[0m
+\033[1;32m--sell ==> \033[0mSet sale price
+       ex: \033[1;32m1,580\033[0m
+\033[1;32m--help\033[0m
+\033[1;32m--exit ==> \033[0mPress 'e' for exit
 
-example:\n\tpython3 coins.py --coin ETH --buy 1,660 --sell 1,700
+\033[1;32m
+example:\n\t\033[0mpython3 coins.py --coin ETH --buy 1,660 --sell 1,700
         python3 coins.py --coin ETH --help
 """
 
@@ -48,28 +59,28 @@ def islem(a):
 
 try:
     if sys.argv[2] in ['BTC', ]:
-        a = "https://www.binance.com/tr/trade/BTC_USDT"
+        a = "https://www.binance.com/en/trade/BTC_USDT"
         islem(a)
     elif sys.argv[2] in ['ETH']:
-        a = "https://www.binance.com/tr/trade/ETH_USDT"
+        a = "https://www.binance.com/en/trade/ETH_USDT"
         islem(a)
     elif sys.argv[2] in ['DASH']:
         a = "https://www.binance.com/en/trade/DASH_USDT"
         islem(a)
     elif sys.argv[2] in ['LTC']:
-        a = "https://www.binance.com/tr/trade/LTC_USDT"
+        a = "https://www.binance.com/en/trade/LTC_USDT"
         islem(a)
     elif sys.argv[2] in ['XRP']:
-        a = "https://www.binance.com/tr/trade/XRP_USDT"
+        a = "https://www.binance.com/en/trade/XRP_USDT"
         islem(a)
     elif sys.argv[2] in ['ADA']:
-        a = "https://www.binance.com/tr/trade/ADA_USDT"
+        a = "https://www.binance.com/en/trade/ADA_USDT"
         islem(a)
     elif sys.argv[2] in ['EOS']:
-        a = "https://www.binance.com/tr/trade/EOS_USDT"
+        a = "https://www.binance.com/en/trade/EOS_USDT"
         islem(a)
     elif sys.argv[2] in ['DOT']:
-        a = "https://www.binance.com/tr/trade/DOT_USDT"
+        a = "https://www.binance.com/en/trade/DOT_USDT"
         islem(a)
     elif sys.argv[2] in ['DOGE']:
         a = "https://www.binance.com/en/trade/DOGE_USDT"
